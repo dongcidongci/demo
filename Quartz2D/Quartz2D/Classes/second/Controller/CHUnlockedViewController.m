@@ -39,7 +39,7 @@
             [self.navigationController pushViewController:paintVc animated:YES];
         }else{
             
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"请重输密码" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:@"密码错误,请重输密码" preferredStyle:UIAlertControllerStyleAlert];
             
             UIAlertAction *action = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
                 

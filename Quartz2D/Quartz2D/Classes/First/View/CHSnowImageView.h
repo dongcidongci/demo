@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface CHSnowImageView : UIImageView
-
+/**动画形式修改控件位置*/
+- (void)change;
 
 
 

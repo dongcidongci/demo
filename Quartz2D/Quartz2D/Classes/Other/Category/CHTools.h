@@ -9,11 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface CHTools : NSObject
-/**根据key在偏好设置中取出之value*/
+/**根据key在沙盒中取出value*/
 + (NSString *)valueForKey:(NSString *)key;
-///**保存当前版本号到偏好设置去*/
-//+ (void)saveCurrentVersionForKey:(NSString *)key;
-/**info.plist中读取版本号*/
+/**获得当前版本*/
 + (NSString *)currentVersion;
 /**以这个key把value保存到偏好设置中去*/
 + (void)setValue:(id)value forKey:(NSString *)key;

@@ -10,11 +10,6 @@
 
 @implementation CHTools
 
-//+ (void)saveCurrentVersionForKey:(NSString *)key{
-////    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"];
-//     NSString *currentVersion = [self currentVersion];
-//    [[NSUserDefaults standardUserDefaults] setValue:currentVersion forKey:key];
-//}
 + (NSString *)valueForKey:(NSString *)key{
     NSString *preVersion = [[NSUserDefaults standardUserDefaults] valueForKey:key];
     return preVersion;

@@ -7,6 +7,8 @@
 //
 
 #import "CHPaintViewController.h"
+#import "CHImagePlayerViewController.h"
+
 #import "CHPaintView.h"
 #import "CHEditingPictureView.h"
 
@@ -22,9 +24,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:0 target:self action:@selector(back)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"图片轮播" style:0 target:self action:@selector(imagePlayerVC)];
 }
 - (void)back{
     [self.navigationController popViewControllerAnimated:YES];
+}
+- (void)imagePlayerVC{
+    CHImagePlayerViewController *imagePVC = [[CHImagePlayerViewController alloc] init];
+    imagePVC.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:imagePVC animated:YES];
 }
 #pragma mark - 清楚所有涂鸦
 - (IBAction)clearAllPainting:(UIBarButtonItem *)sender {
