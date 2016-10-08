@@ -25,7 +25,7 @@
     CHImagePlayerSV *scrollView = [[CHImagePlayerSV alloc] init];
     scrollView.frame = CGRectMake(10, 74, CHSCREENW - 20, 200);
     scrollView.imageArray = array;
-    scrollView.backgroundColor = [UIColor redColor];
+    //scrollView.backgroundColor = [UIColor redColor];
     //设置scrollView的contentSize
     scrollView.contentSize = CGSizeMake(3 * scrollView.width, scrollView.height);
     
